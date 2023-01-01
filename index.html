@@ -2,18 +2,23 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <header><h3>Vote</h3>
 <p>Click on your Choose project image</p>
+<input type="text" id="inc1" value="0"></input>
+<input type="text" id="inc2" value="0"></input>
+<input type="text" id="inc3" value="0"></input>
 </header>
 
 
-
-<div><img src="download.png" alt="image"></img></div>
-<div class="e2"><img src="1.jpg" alt="image"></img></div>
-<div class="e3"><img src="download2.jpg" alt="image"></img></div>
+<form action="result.html" method="POST">
+    <div><div class="container"><img src="download.png" alt="image"></img><button onclick="myFunction1()" type="button" class="btn">Vote</button></div></div>
+   
+    <div class="e2"><div class="container"><img src="1.jpg" alt="image" ></img><button onclick="myFunction2()" type="button" class="btn">Vote</button></div></div>
+    <div class="e3"><div class="container"><img src="download2.jpg" alt="image"></img><button onclick="myFunction3()" type="button" class="btn">Vote</button></div></div>
+</form>
 
 
 </body>

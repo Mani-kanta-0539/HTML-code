@@ -1,4 +1,4 @@
-div {
+/*div {
     width: 100px;
     height: 100px;
     background-color: red;
@@ -40,9 +40,40 @@ div {
     50%  {background-color:blue; left:900px; top:900px;}
     75%  {background-color:green; left:0px; top:900px;}
     100% {background-color:red; left:0px; top:0px;}
+  }*/
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
   }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
+  
   header{
-  text-align: center;
+    text-align: center;
   font-size: 18px;
   color: white;
   padding: 18px;
